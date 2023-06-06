@@ -31,6 +31,10 @@ ul {
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
+        
+}
+img {
+        display: block;
 }
 
 /**------------HEADER-----------*/
@@ -44,21 +48,20 @@ ul {
 }
 .header-logo {
         display: flex;
+        align-items: center;
 }
 .header-list {
         display: flex;
         align-items: center;
         gap: 40px;
 }
-
 .header-address-list {
         display: flex;
         align-items: center;
         gap: 40px;
 }
 .header-item {
-        margin-top: 24px;
-        margin-bottom: 24px;
+        padding: 24px 0;
 }
 
 .header-logo-link {
@@ -71,11 +74,10 @@ ul {
         color: var(--hf-logo-color);
 }
 .header-logo-link {
-        padding-top: 25px;
+        margin-right: 76px;
 }
 .header-logo-span{
         color: var(--title-color);
-        margin-right: 76px;
 }
 .header-link {
         font-weight: 500;
@@ -94,7 +96,6 @@ ul {
         font-style: normal;
         margin-left: auto;
 }
-
 .link-address {
         font-style: normal;
         font-weight: 400;
@@ -156,7 +157,10 @@ ul {
 /** --------PORTFOLIO BTN--------- */
 .portfolio-btn {
         padding-top: 96px;
-        padding-bottom: 72px;
+        padding-bottom: 120px;
+}
+.visually-hidden {
+        display: none;
 }
 .btn-filter {
         border: none;
@@ -169,6 +173,9 @@ ul {
         flex-direction: row;
         justify-content: center;
         gap: 24px;
+        margin-bottom: 72px;
+}
+.filter-item {
 }
 .btn-filter {
         font-family: inherit;
@@ -184,6 +191,7 @@ ul {
 .btn-filter:focus {
         color: #FFFFFF;
         background-color: #404BBF;
+        border: 1px solid transparent;
 }
 
 /** --------DEFAULT-------- */
@@ -202,7 +210,8 @@ ul {
 .services-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 48px 24px;
+        column-gap: 24px;
+        row-gap: 48px;
 }
 .services-item {
         width: calc((100% - 48) / 3);
@@ -211,6 +220,9 @@ ul {
         padding: 32px 16px;
         border: 1px solid #E7E9FC;
         border-top: none;
+}
+.headline-services {
+        margin-bottom: 8px;
 }
 .headline-services {
         font-weight: 500;
@@ -234,13 +246,13 @@ ul {
 .main-studio {
         display: flex;
 }
-
+.visually-hidden {
+        display: none;
+}
 .main-studio-list {
         display: flex;
         gap: 24px;
 }
-
-
 .main-studio-headline {
         color: var(--title-color);
         margin-bottom: 8px;
@@ -256,7 +268,10 @@ ul {
         padding-bottom: 120px;
 }
 .studio-picture-item {
-        width: calc((100% - 48) / 3);
+        width: calc((100% - 72) / 4);
+}
+.studio-picture-title {
+        margin-bottom: 72px;
 }
 .studio-picture-title {
         font-size: 36px;
@@ -280,13 +295,18 @@ ul {
         padding-bottom: 120px;
 }
 .studio-team-title {
+        margin-bottom: 72px;
+}
+.container-studio-team {
+        padding: 32px 16px;
+}
+.studio-team-title {
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
-        margin-bottom: 72px;
 }
 .studio-team-list {
         display: flex;
@@ -296,12 +316,10 @@ ul {
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
 }
-.studio-team-item {
-        background-color: #FFFFFF;
-}
+
 .studio-team-headline {
-        display: flex;
-        justify-content: center;
+        text-align: center;
+        margin-bottom: 8px;
 }
 .studio-team-headline {
         font-weight: 500;
@@ -309,12 +327,9 @@ ul {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--title-color);
-        margin-top: 32px;
-        margin-bottom: 8px;
 }
 .studio-team-paragraph {
-        display: flex;
-        justify-content: center;
+        text-align: center;
 }
 .studio-team-paragraph {
         font-size: 16px;
@@ -352,11 +367,13 @@ ul {
 .footer-container {
         
 }
-.footer-logo-link {}
+.footer-logo-link {
+        display: inline-block;
+        margin-bottom: 16px;
+}
 
 .footer-logo-span {}
 
 .footer-paragraph {
         max-width: 264px;
-        margin-top: 16px;
 }
