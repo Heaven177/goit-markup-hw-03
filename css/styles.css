@@ -80,6 +80,9 @@ img {
         color: var(--title-color);
 }
 .header-link {
+        padding: 24px 0;
+}
+.header-link {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -176,6 +179,7 @@ img {
         margin-bottom: 72px;
 }
 .filter-item {
+        padding: 24px 0;
 }
 .btn-filter {
         font-family: inherit;
@@ -221,6 +225,7 @@ img {
         border: 1px solid #E7E9FC;
         border-top: none;
 }
+
 .headline-services {
         margin-bottom: 8px;
 }
@@ -252,6 +257,9 @@ img {
 .main-studio-list {
         display: flex;
         gap: 24px;
+}
+.main-studio-item {
+        width: calc((100% - 72px) / 4);
 }
 .main-studio-headline {
         color: var(--title-color);
