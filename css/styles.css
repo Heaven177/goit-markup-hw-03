@@ -176,9 +176,7 @@ img {
         gap: 24px;
         margin-bottom: 72px;
 }
-.filter-item {
-        padding: 24px 0;
-}
+
 .btn-filter {
         font-family: inherit;
         font-weight: 500;
@@ -219,7 +217,6 @@ img {
 
 /** ---------PORTFOLIO MAIN------- */
 .services-list {
-        padding-bottom: 120px;
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -300,7 +297,7 @@ img {
 /** ------STUDIO TEAM------ */
 
 .studio-team {
-        background-color: #F4F4FD;
+        background-color: #FFFFFF;
 }
 .studio-team {
         padding-top: 120px;
